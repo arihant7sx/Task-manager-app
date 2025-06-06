@@ -1,7 +1,11 @@
 import FreeSimpleGUI as sg
 import functions
 import time
+import os
 
+if not os.path.exists("tasks.txt"):
+    with open("tasks.txt",'w') as file:
+        pass
 sg.theme("Black")
 
 
